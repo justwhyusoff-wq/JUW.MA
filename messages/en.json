@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Home",
+    "whatWeDo": "What We Do",
+    "whyUs": "Why Us",
+    "industries": "Industries",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Let's Talk"
+  },
+  "industries": {
+    "restaurants": "Restaurants",
+    "carRental": "Car Rental",
+    "travel": "Travel Agencies",
+    "realEstate": "Real Estate",
+    "ecommerce": "E-commerce",
+    "services": "Services"
+  },
+  "home": {
+    "label": "We build digital systems",
+    "title1": "Not just websites.",
+    "title2": "Experiences.",
+    "subtitle": "We build tailored digital systems for restaurants, car rentals, travel agencies, real estate and beyond — built for Morocco.",
+    "ctaPrimary": "Discover why us",
+    "ctaSecondary": "See what we do",
+    "problemNumber": "97%",
+    "problemText": "of Moroccan businesses lose clients to a bad digital experience. We fix that — for your specific industry.",
+    "industriesHeading": "We speak your industry's language.",
+    "whatWeBuildHeading": "What we build.",
+    "processHeading": "We don't guess. We understand.",
+    "whyUsTeaser": "Every restaurant is different. Every car rental has a different system. We've studied them all.",
+    "whyUsCta": "See why clients choose us",
+    "statsIndustries": "Industries served",
+    "statsSystems": "Systems built",
+    "statsCountries": "Countries",
+    "statsCountriesValue": "Morocco",
+    "blogHeading": "Fresh thinking.",
+    "blogCta": "Read all articles",
+    "contactHeading": "Ready to talk?",
+    "contactSubtitle": "Pick the channel that works for you. We answer fast."
+  },
+  "process": {
+    "discover": "Discover",
+    "discoverDesc": "We learn your business inside out before writing a single line of code.",
+    "design": "Design",
+    "designDesc": "Custom interfaces designed around how your business operates.",
+    "build": "Build",
+    "buildDesc": "Modern stack, clean code, scalable foundations.",
+    "launch": "Launch",
+    "launchDesc": "Ship fast. Iterate. We stay with you after launch."
+  },
+  "whatWeDo": {
+    "title": "We build digital systems that work for real businesses.",
+    "subtitle": "Not templates. Not shortcuts. Systems built around how your business actually operates.",
+    "servicesHeading": "Services",
+    "techHeading": "What we build with"
+  },
+  "whyUs": {
+    "title": "Why justwhyus?",
+    "subtitle": "Because we don't just build — we understand."
+  },
+  "blog": {
+    "title": "Fresh thinking.",
+    "subtitle": "Notes, ideas and lessons from building digital systems for Moroccan businesses.",
+    "readMore": "Read more",
+    "readTime": "min read",
+    "categories": "All categories",
+    "related": "Related articles"
+  },
+  "faq": {
+    "title": "Questions, answered.",
+    "subtitle": "Everything you might want to know before we work together.",
+    "searchPlaceholder": "Search questions..."
+  },
+  "contact": {
+    "title": "Let's build something real.",
+    "subtitle": "Three ways to reach us. Pick what works for you.",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Fastest. Message us directly.",
+    "email": "Email",
+    "emailDesc": "For longer briefs and documents.",
+    "call": "Book a Call",
+    "callDesc": "30-min intro. No pressure.",
+    "formTitle": "Or send us a message",
+    "name": "Your name",
+    "company": "Company",
+    "industry": "Industry",
+    "message": "Tell us about your project",
+    "submit": "Send message",
+    "based": "Based in Morocco"
+  },
+  "footer": {
+    "tagline": "Digital systems for real businesses.",
+    "pages": "Pages",
+    "industries": "Industries",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "location": "Morocco"
+  }
+}

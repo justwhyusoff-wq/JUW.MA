@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "whatWeDo": "Ce que nous faisons",
+    "whyUs": "Pourquoi nous",
+    "industries": "Industries",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Discutons"
+  },
+  "industries": {
+    "restaurants": "Restaurants",
+    "carRental": "Location de voitures",
+    "travel": "Agences de voyage",
+    "realEstate": "Immobilier",
+    "ecommerce": "E-commerce",
+    "services": "Services"
+  },
+  "home": {
+    "label": "Nous construisons des systèmes digitaux",
+    "title1": "Pas juste des sites web.",
+    "title2": "Des expériences.",
+    "subtitle": "Nous créons des systèmes digitaux sur mesure pour restaurants, locations de voitures, agences de voyage, immobilier et au-delà — pensés pour le Maroc.",
+    "ctaPrimary": "Découvrir pourquoi nous",
+    "ctaSecondary": "Voir ce que nous faisons",
+    "problemNumber": "97%",
+    "problemText": "des entreprises marocaines perdent des clients à cause d'une mauvaise expérience digitale. Nous corrigeons cela — pour votre industrie spécifique.",
+    "industriesHeading": "Nous parlons le langage de votre industrie.",
+    "whatWeBuildHeading": "Ce que nous construisons.",
+    "processHeading": "Nous ne devinons pas. Nous comprenons.",
+    "whyUsTeaser": "Chaque restaurant est différent. Chaque location de voitures a un système différent. Nous les avons tous étudiés.",
+    "whyUsCta": "Voir pourquoi nos clients nous choisissent",
+    "statsIndustries": "Industries servies",
+    "statsSystems": "Systèmes construits",
+    "statsCountries": "Pays",
+    "statsCountriesValue": "Maroc",
+    "blogHeading": "Réflexions fraîches.",
+    "blogCta": "Lire tous les articles",
+    "contactHeading": "Prêt à parler ?",
+    "contactSubtitle": "Choisissez le canal qui vous convient. Nous répondons vite."
+  },
+  "process": {
+    "discover": "Découvrir",
+    "discoverDesc": "Nous apprenons votre métier en profondeur avant d'écrire une seule ligne de code.",
+    "design": "Concevoir",
+    "designDesc": "Interfaces sur mesure conçues autour de votre fonctionnement.",
+    "build": "Construire",
+    "buildDesc": "Stack moderne, code propre, bases solides.",
+    "launch": "Lancer",
+    "launchDesc": "Livrer vite. Itérer. Nous restons avec vous après le lancement."
+  },
+  "whatWeDo": {
+    "title": "Nous construisons des systèmes digitaux qui fonctionnent pour de vraies entreprises.",
+    "subtitle": "Pas de templates. Pas de raccourcis. Des systèmes pensés autour de votre fonctionnement réel.",
+    "servicesHeading": "Services",
+    "techHeading": "Ce avec quoi nous construisons"
+  },
+  "whyUs": {
+    "title": "Pourquoi justwhyus ?",
+    "subtitle": "Parce que nous ne construisons pas seulement — nous comprenons."
+  },
+  "blog": {
+    "title": "Réflexions fraîches.",
+    "subtitle": "Notes, idées et leçons tirées de la construction de systèmes digitaux pour les entreprises marocaines.",
+    "readMore": "Lire la suite",
+    "readTime": "min de lecture",
+    "categories": "Toutes catégories",
+    "related": "Articles liés"
+  },
+  "faq": {
+    "title": "Questions, réponses.",
+    "subtitle": "Tout ce que vous pourriez vouloir savoir avant de travailler ensemble.",
+    "searchPlaceholder": "Rechercher une question..."
+  },
+  "contact": {
+    "title": "Construisons quelque chose de réel.",
+    "subtitle": "Trois façons de nous joindre. Choisissez ce qui vous convient.",
+    "whatsapp": "WhatsApp",
+    "whatsappDesc": "Le plus rapide. Écrivez-nous directement.",
+    "email": "Email",
+    "emailDesc": "Pour les briefs plus longs et documents.",
+    "call": "Réserver un appel",
+    "callDesc": "30 min d'intro. Sans pression.",
+    "formTitle": "Ou envoyez-nous un message",
+    "name": "Votre nom",
+    "company": "Entreprise",
+    "industry": "Industrie",
+    "message": "Parlez-nous de votre projet",
+    "submit": "Envoyer",
+    "based": "Basés au Maroc"
+  },
+  "footer": {
+    "tagline": "Des systèmes digitaux pour de vraies entreprises.",
+    "pages": "Pages",
+    "industries": "Industries",
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "location": "Maroc"
+  }
+}

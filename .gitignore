@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+build
+dist
+.env*.local
+.env
+.vercel
+*.log
+.DS_Store
+.turbo
+.cache
+.eslintcache
+*.swp
+*.swo
+*~
+.vscode/*.log
