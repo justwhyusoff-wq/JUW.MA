@@ -1,35 +1,23 @@
 'use client';
 
 // Decorative animated background for the hero.
-// Layers (back → front): glow pulse, panning grid, sweeping beam,
-// crosshair lines, floating particles.
+// Optimized: reduced particles, simplified animations.
 
 const PARTICLES = [
-  { left: '8%',  delay: '0s',   duration: '3.2s' },
-  { left: '18%', delay: '1.4s', duration: '3.6s' },
-  { left: '28%', delay: '0.6s', duration: '3.0s' },
-  { left: '40%', delay: '2.0s', duration: '3.8s' },
-  { left: '52%', delay: '0.9s', duration: '3.4s' },
-  { left: '64%', delay: '1.7s', duration: '3.1s' },
-  { left: '74%', delay: '0.3s', duration: '3.5s' },
-  { left: '84%', delay: '2.3s', duration: '3.3s' },
-  { left: '92%', delay: '1.0s', duration: '3.7s' },
+  { left: '20%',  delay: '0s' },
+  { left: '40%', delay: '0.8s' },
+  { left: '60%', delay: '1.2s' },
+  { left: '80%', delay: '0.4s' },
 ];
 
 export function HeroBackground() {
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div className="pointer-events-none absolute inset-0 overflow-hidden will-change-transform" style={{ contain: 'layout style paint' }}>
       {/* Pulsing radial glow */}
-      <div className="absolute inset-0 bg-hero-glow-pulse" />
-
-      {/* Panning mint grid */}
-      <div className="absolute inset-0 bg-grid-animated" />
-
-      {/* Sweeping diagonal beam */}
-      <div className="absolute inset-0 bg-beam-sweep mix-blend-screen" />
+      <div className="absolute inset-0 bg-hero-glow-pulse will-change-transform" />
 
       {/* Soft amber blob top-right */}
-      <div className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-amber-300/10 blur-[120px]" />
+      <div className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-amber-300/5 blur-[80px]" />
 
       {/* Crosshair sweep lines */}
       <div
@@ -42,7 +30,7 @@ export function HeroBackground() {
       />
 
       {/* Floating particles (rise from bottom) */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 will-change-transform">
         {PARTICLES.map((p, i) => (
           <span
             key={i}
@@ -50,7 +38,7 @@ export function HeroBackground() {
             style={{
               left: p.left,
               bottom: '-10px',
-              animationDuration: p.duration,
+              animationDuration: '3.5s',
               animationDelay: p.delay,
             }}
           />

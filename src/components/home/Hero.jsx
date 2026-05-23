@@ -183,7 +183,7 @@ function TransformationBeam() {
           <motion.div
             animate={{ y: [0, -6, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-            className="relative h-32 w-32"
+            className="relative h-32 w-32 will-change-transform"
           >
             <Image
               src="/brand/logo-3d-plate.png"
@@ -191,27 +191,16 @@ function TransformationBeam() {
               width={256}
               height={256}
               priority
-              className="h-full w-full object-contain drop-shadow-[0_0_30px_rgba(45,212,168,0.5)]"
+              className="h-full w-full object-contain drop-shadow-[0_0_16px_rgba(45,212,168,0.4)]"
             />
           </motion.div>
-          {/* Sparkle particles */}
-          <motion.div
-            animate={{ opacity: [0.3, 1, 0.3], scale: [0.8, 1.2, 0.8] }}
-            transition={{ duration: 2.5, repeat: Infinity }}
-            className="absolute -top-3 -right-3 h-2 w-2 rounded-full bg-emerald-400"
-          />
-          <motion.div
-            animate={{ opacity: [0.3, 1, 0.3], scale: [0.8, 1.2, 0.8] }}
-            transition={{ duration: 2.5, repeat: Infinity, delay: 1.2 }}
-            className="absolute -bottom-3 -left-3 h-2 w-2 rounded-full bg-primary"
-          />
         </div>
       </div>
 
       {/* Left half: messy / before */}
-      <div className="absolute left-0 top-0 bottom-0 z-10 flex w-1/2 flex-col justify-center gap-4 overflow-hidden">
+      <div className="absolute left-0 top-0 bottom-0 z-10 flex w-1/2 flex-col justify-center gap-4 overflow-hidden will-change-transform">
         {MESSY_ROWS.map((row, i) => (
-          <ScrollRow key={i} reverse={i % 2 === 1} duration={40 + i * 4}>
+          <ScrollRow key={i} reverse={i % 2 === 1} duration={50 + i * 5}>
             {row.map((kind, j) => (
               <MessyCard key={`${i}-${j}`} kind={kind} />
             ))}
@@ -220,9 +209,9 @@ function TransformationBeam() {
       </div>
 
       {/* Right half: polished / after */}
-      <div className="absolute right-0 top-0 bottom-0 z-10 flex w-1/2 flex-col justify-center gap-4 overflow-hidden">
+      <div className="absolute right-0 top-0 bottom-0 z-10 flex w-1/2 flex-col justify-center gap-4 overflow-hidden will-change-transform">
         {POLISHED_ROWS.map((row, i) => (
-          <ScrollRow key={i} reverse={i % 2 === 1} duration={40 + i * 4}>
+          <ScrollRow key={i} reverse={i % 2 === 1} duration={50 + i * 5}>
             {row.map((item, j) => (
               <PolishedCard key={`${i}-${j}`} item={item} />
             ))}
@@ -238,7 +227,7 @@ function ScrollRow({ children, reverse = false, duration = 40 }) {
   const items = Array.isArray(children) ? children : [children];
   return (
     <motion.div
-      className="flex w-max gap-4"
+      className="flex w-max gap-4 will-change-transform"
       animate={{ x: reverse ? ['-50%', '0%'] : ['0%', '-50%'] }}
       transition={{ duration, repeat: Infinity, ease: 'linear' }}
     >

@@ -88,47 +88,22 @@ html.dark ::-webkit-scrollbar-thumb:hover { background: #2DD4A8; }
 
 /* === Animated hero background layers === */
 
-.bg-grid-animated {
-  background-image:
-    linear-gradient(to right, rgba(45, 212, 168, 0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(45, 212, 168, 0.12) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: radial-gradient(ellipse 75% 65% at 50% 40%, black 25%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 40%, black 25%, transparent 75%);
-  animation: gridPan 3s linear infinite;
-}
-
-@keyframes gridPan {
-  0%   { background-position: 0 0; }
-  100% { background-position: 56px 56px; }
-}
-
 /* Pulsing radial mint glow */
 .bg-hero-glow-pulse {
-  background: radial-gradient(ellipse 70% 60% at 50% 30%, rgba(45, 212, 168, 0.22), transparent 60%);
-  animation: heroPulse 3s ease-in-out infinite;
+  background: radial-gradient(ellipse 70% 60% at 50% 30%, rgba(45, 212, 168, 0.2), transparent 60%);
+  animation: heroPulse 4s ease-in-out infinite;
+  will-change: opacity, transform;
 }
 @keyframes heroPulse {
-  0%, 100% { opacity: 0.55; transform: scale(1); }
-  50%      { opacity: 1;    transform: scale(1.05); }
-}
-
-/* Scanning beam (sweeps left → right) */
-.bg-beam-sweep {
-  background: linear-gradient(110deg, transparent 40%, rgba(45, 212, 168, 0.18) 50%, transparent 60%);
-  background-size: 250% 100%;
-  animation: beamSweep 3s linear infinite;
-}
-@keyframes beamSweep {
-  0%   { background-position: 200% 0; }
-  100% { background-position: -100% 0; }
+  0%, 100% { opacity: 0.5; transform: scale3d(1, 1, 1); }
+  50%      { opacity: 0.85;    transform: scale3d(1.04, 1.04, 1); }
 }
 
 /* Floating particle dots */
 @keyframes floatUp {
   0%   { transform: translate3d(0, 0, 0); opacity: 0; }
-  15%  { opacity: 1; }
-  85%  { opacity: 1; }
+  15%  { opacity: 0.8; }
+  85%  { opacity: 0.8; }
   100% { transform: translate3d(0, -240px, 0); opacity: 0; }
 }
 .particle {
@@ -137,8 +112,9 @@ html.dark ::-webkit-scrollbar-thumb:hover { background: #2DD4A8; }
   height: 6px;
   border-radius: 9999px;
   background: #2DD4A8;
-  box-shadow: 0 0 14px rgba(45, 212, 168, 0.7);
-  animation: floatUp 3s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(45, 212, 168, 0.5);
+  animation: floatUp 3.5s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 /* Crosshair sweep lines */
